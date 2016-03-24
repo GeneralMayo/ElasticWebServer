@@ -89,3 +89,6 @@ clean:
 cleanlogs:
 	rm -rf $(LOGDIR) latedays.qsub.*
 
+handin: all
+	tar -cf handin.tar writeup.pdf -C src myserver
+
